@@ -1,0 +1,8 @@
+echo { > package.json
+echo   "name": "roblox-cashback-api", >> package.json
+echo   "version": "1.0.0", >> package.json
+echo   "description": "Backend API", >> package.json
+echo   "main": "server.js", >> package.json
+echo   "scripts": {"start": "node server.js"}, >> package.json
+echo   "dependencies": {"express": "^4.18.2"} >> package.json
+echo } >> package.json
