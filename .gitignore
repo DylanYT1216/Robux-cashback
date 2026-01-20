@@ -138,23 +138,34 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# Edit the .gitignore GitHub created
-# Add these lines at the end:
-echo "" >> .gitignore
-echo "# Roblox specific files" >> .gitignore
-echo "*.rbxl" >> .gitignore
-echo "*.rbxlx" >> .gitignore
-echo "*.rbxm" >> .gitignore
-echo "*.rbxmx" >> .gitignore
-echo ".rbxmk.lock" >> .gitignore
-echo "" >> .gitignore
-echo "# Environment variables" >> .gitignore
-echo ".env" >> .gitignore
-echo ".env.local" >> .gitignore
-echo ".env.*.local" >> .gitignore
-echo "" >> .gitignore
-echo "# Secrets" >> .gitignore
-echo "secrets.json" >> .gitignore
-echo "config.json" >> .gitignore
-echo "*.key" >> .gitignore
-echo "*.pem" >> .gitignore
+# ====================================
+# Roblox Cashback Project Additions
+# ====================================
+
+# Roblox Studio files
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+.rbxmk.lock
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+secrets.json
+config.json
+*.key
+*.pem
+*.crt
+*.cert
+
+# Database files (if using local)
+*.db
+*.sqlite
+mongodata/
+data/
+
+# Chrome Extension files
+*.crx
+*.pem  # Extension signing key
