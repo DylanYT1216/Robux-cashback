@@ -137,3 +137,24 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Edit the .gitignore GitHub created
+# Add these lines at the end:
+echo "" >> .gitignore
+echo "# Roblox specific files" >> .gitignore
+echo "*.rbxl" >> .gitignore
+echo "*.rbxlx" >> .gitignore
+echo "*.rbxm" >> .gitignore
+echo "*.rbxmx" >> .gitignore
+echo ".rbxmk.lock" >> .gitignore
+echo "" >> .gitignore
+echo "# Environment variables" >> .gitignore
+echo ".env" >> .gitignore
+echo ".env.local" >> .gitignore
+echo ".env.*.local" >> .gitignore
+echo "" >> .gitignore
+echo "# Secrets" >> .gitignore
+echo "secrets.json" >> .gitignore
+echo "config.json" >> .gitignore
+echo "*.key" >> .gitignore
+echo "*.pem" >> .gitignore
